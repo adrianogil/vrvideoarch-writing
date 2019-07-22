@@ -88,67 +88,16 @@
 %% Of note is the shared affiliation of the first two authors, and the
 %% "authornote" and "authornotemark" commands
 %% used to denote shared contribution to the research.
-\author{Adriano M. Gil}
-\email{adriano.gil@sidia.com}
-
-\author{Afonso R. Costa Jr}
-\email{afonso.j}
+\author{Adriano M. Gil, Afonso R. Costa Jr, Atacilio C. Cunha, Thiago S. Figueira}
+\email{{adriano.gil, afonso.j, a.cunha, t.figueira}@sidia.com}
 
 \affiliation{%
   \institution{Sidia Instituto de Ciência e Tecnologia (SIDIA)}
-  \streetaddress{P.O. Box 1212}
-  \city{Dublin}
-  \state{Ohio}
-  \postcode{43017-6221}
+  % \streetaddress{P.O. Box 1212}
+  \city{Manaus}
+  \state{AM}
+  % \postcode{43017-6221}
 }
-
-\author{Lars Th{\o}rv{\"a}ld}
-\affiliation{%
-  \institution{The Th{\o}rv{\"a}ld Group}
-  \streetaddress{1 Th{\o}rv{\"a}ld Circle}
-  \city{Hekla}
-  \country{Iceland}}
-\email{larst@affiliation.org}
-
-\author{Valerie B\'eranger}
-\affiliation{%
-  \institution{Inria Paris-Rocquencourt}
-  \city{Rocquencourt}
-  \country{France}
-}
-
-\author{Aparna Patel}
-\affiliation{%
- \institution{Rajiv Gandhi University}
- \streetaddress{Rono-Hills}
- \city{Doimukh}
- \state{Arunachal Pradesh}
- \country{India}}
-
-\author{Huifen Chan}
-\affiliation{%
-  \institution{Tsinghua University}
-  \streetaddress{30 Shuangqing Rd}
-  \city{Haidian Qu}
-  \state{Beijing Shi}
-  \country{China}}
-
-\author{Charles Palmer}
-\affiliation{%
-  \institution{Palmer Research Laboratories}
-  \streetaddress{8600 Datapoint Drive}
-  \city{San Antonio}
-  \state{Texas}
-  \postcode{78229}}
-\email{cpalmer@prl.com}
-
-\author{John Smith}
-\affiliation{\institution{The Th{\o}rv{\"a}ld Group}}
-\email{jsmith@affiliation.org}
-
-\author{Julius P. Kumquat}
-\affiliation{\institution{The Kumquat Consortium}}
-\email{jpkumquat@consortium.net}
 
 %%
 %% By default, the full list of authors will be used in the page
@@ -176,26 +125,11 @@
 %%
 \begin{CCSXML}
 <ccs2012>
- <concept>
-  <concept_id>10010520.10010553.10010562</concept_id>
-  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
-  <concept_significance>500</concept_significance>
- </concept>
- <concept>
-  <concept_id>10010520.10010575.10010755</concept_id>
-  <concept_desc>Computer systems organization~Redundancy</concept_desc>
-  <concept_significance>300</concept_significance>
- </concept>
- <concept>
-  <concept_id>10010520.10010553.10010554</concept_id>
-  <concept_desc>Computer systems organization~Robotics</concept_desc>
-  <concept_significance>100</concept_significance>
- </concept>
- <concept>
-  <concept_id>10003033.10003083.10003095</concept_id>
-  <concept_desc>Networks~Network reliability</concept_desc>
-  <concept_significance>100</concept_significance>
- </concept>
+<concept>
+<concept_id>10011007.10010940.10010971.10010972.10010539</concept_id>
+<concept_desc>Software and its engineering~n-tier architectures</concept_desc>
+<concept_significance>300</concept_significance>
+</concept>
 </ccs2012>
 \end{CCSXML}
 
@@ -207,473 +141,217 @@
 %%
 %% Keywords. The author(s) should pick words that accurately describe
 %% the work being presented. Separate the keywords with commas.
-\keywords{datasets, neural networks, gaze detection, text tagging}
-
-%% A "teaser" image appears between the author and affiliation
-%% information and the body of the document, and typically spans the
-%% page.
-\begin{teaserfigure}
-  \includegraphics[width=\textwidth]{sampleteaser}
-  \caption{Seattle Mariners at Spring Training, 2010.}
-  \Description{Enjoying the baseball game from the third-base
-  seats. Ichiro Suzuki preparing to bat.}
-  \label{fig:teaser}
-\end{teaserfigure}
+\keywords{video player, virtual reality}
 
 %%
 %% This command processes the author and affiliation and title
 %% information and builds the first part of the formatted document.
 \maketitle
 
-\section{Introduction}
-ACM's consolidated article template, introduced in 2017, provides a
-consistent \LaTeX\ style for use across ACM publications, and
-incorporates accessibility and metadata-extraction functionality
-necessary for future Digital Library endeavors. Numerous ACM and
-SIG-specific \LaTeX\ templates have been examined, and their unique
-features incorporated into this single new template.
+\section{Introdução}
 
-If you are new to publishing with ACM, this document is a valuable
-guide to the process of preparing your work for publication. If you
-have published with ACM before, this document provides insight and
-instruction into more recent changes to the article template.
+%% - Contextualizar VR
 
-The ``\verb|acmart|'' document class can be used to prepare articles
-for any ACM publication --- conference or journal, and for any stage
-of publication, from review to final ``camera-ready'' copy, to the
-author's own version, with {\itshape very} few changes to the source.
+A Realidade Virtual possui um grande atrativo pelo sua forma inovadora no consumo de conteúdo. Imersão é sua característica mais marcante, possibilitando aos usuários um profundo envolvimento com objetos e cenários em 3D dentro de um mundo virtual.
 
-\section{Template Overview}
-As noted in the introduction, the ``\verb|acmart|'' document class can
-be used to prepare many different kinds of documentation --- a
-double-blind initial submission of a full-length technical paper, a
-two-page SIGGRAPH Emerging Technologies abstract, a ``camera-ready''
-journal article, a SIGCHI Extended Abstract, and more --- all by
-selecting the appropriate {\itshape template style} and {\itshape
-  template parameters}.
+%% - Contextualizar VR Headsets e VR Mobile
 
-This document will explain the major features of the document
-class. For further information, the {\itshape \LaTeX\ User's Guide} is
-available from
-\url{https://www.acm.org/publications/proceedings-template}.
 
-\subsection{Template Styles}
+%% - Falar sobre a importância do consumo de mídias no VR Mobile
+Aplicações de Realidade Virtual permitem uma maior discrição e um maior sensação de interação com conteúdo multimídia. Assim, mesmo fotos e vídeos usuais se tornam uma experiência diferenciada para o usuário VR. Muitas aplicações tem por mote funcionar como galeria de mídia dentro do ambiente de realidade virtual, por exemplo, \textit{VR Gallery} da Samsung é uma delas.
 
-The primary parameter given to the ``\verb|acmart|'' document class is
-the {\itshape template style} which corresponds to the kind of publication
-or SIG publishing the work. This parameter is enclosed in square
-brackets and is a part of the {\verb|documentclass|} command:
-\begin{verbatim}
-  \documentclass[STYLE]{acmart}
-\end{verbatim}
+%% - Contextualizar ferramentas de desenvolvimento para VR Mobile (Unity, GVRF)
+Unity é um motor de jogos WYSIWYG (What You See Is What You Get) \cite{sv2015popolin}, atualmente é a mais ampla ferramenta para o desenvolvimento de aplicações de realidade virtual mobile, presente como motor de criação em 60\% do conteúdo criado para realidades virtual e aumentada, conta com uma comunidade de desenvolvedores presentes em todo o mundo, além de ser utilizada por grandes corporações como Microsoft e Disney. (https://unity3d.com/pt/public-relations)
 
-Journals use one of three template styles. All but three ACM journals
-use the {\verb|acmsmall|} template style:
-\begin{itemize}
-\item {\verb|acmsmall|}: The default journal template style.
-\item {\verb|acmlarge|}: Used by JOCCH and TAP.
-\item {\verb|acmtog|}: Used by TOG.
-\end{itemize}
+%% - Proposta: Desenvolver uma arquitetura de alto desempenho de video player para plataformas VR mobile
+Este artigo tem por proposta a implementação de uma arquitetura de alto desempenho para video player em plataformas de realidade virtual e aumentada utilizando dispositivos móveis. Para avaliações desempenhos serão feitas comparações entre dois frameworks de renderização: Unity e GVRF.
 
-The majority of conference proceedings documentation will use the {\verb|acmconf|} template style.
-\begin{itemize}
-\item {\verb|acmconf|}: The default proceedings template style.
-\item{\verb|sigchi|}: Used for SIGCHI conference articles.
-\item{\verb|sigchi-a|}: Used for SIGCHI ``Extended Abstract'' articles.
-\item{\verb|sigplan|}: Used for SIGPLAN conference articles.
-\end{itemize}
+%% - Estrutura do Artigo
+Na seção \ref{sec-relatedworks} analisamos alguns trabalhos que descrevem o uso de video players no contexto de dispositivos móveis e em realidade virtual e aumentada. A metodologia adotada é descrita na seção \ref{sec-methodology}. A arquitetura implementada foi definda na seção \ref{sec-videoplayer-arch}. Resultados são apresentados na seção \ref{sec-results}. Por fim, as conclusões e perspectivas de trabalhos futuros são mencionadas na seção \ref{sec-conclusion}
 
-\subsection{Template Parameters}
+\section{Trabalhos Relacionados} \label{sec-relatedworks}
 
-In addition to specifying the {\itshape template style} to be used in
-formatting your work, there are a number of {\itshape template parameters}
-which modify some part of the applied template style. A complete list
-of these parameters can be found in the {\itshape \LaTeX\ User's Guide.}
+% TODO: Ainda confuso - melhorar texto
+Consumo de mídia é uma atividade de grande importância para usuários dentro do mundo digital, onde existe uma crescente quantidade de conteúdo a ser consumido. Um trabalho \cite{repo2004users} da década passada já levanta essa demanda por uso de mídia em dispositivos móveis como meio de possibilitar entretenimento, lidar com situações entediantes, compartilhar experiências e conhecimento.
 
-Frequently-used parameters, or combinations of parameters, include:
-\begin{itemize}
-\item {\verb|anonymous,review|}: Suitable for a ``double-blind''
-  conference submission. Anonymizes the work and includes line
-  numbers. Use with the \verb|\acmSubmissionID| command to print the
-  submission's unique ID on each page of the work.
-\item{\verb|authorversion|}: Produces a version of the work suitable
-  for posting by the author.
-\item{\verb|screen|}: Produces colored hyperlinks.
-\end{itemize}
+Aplicações podem usar o consumo de mídia como uma forma de implementar uma interação específica com o usuário. Em \cite{hu2018kalgan}, é citado um exemplo de aplicação para aprendizado de idiomas utilizando um Video Player com enfoque maior na visualização e manipulação da linguagem contida na mídia.
 
-This document uses the following string as the first command in the
-source file:
-\begin{verbatim}
-\documentclass[sigconf]{acmart}
-\end{verbatim}
+%% - Listar trabalhos relacionados a video players para VR Mobile
+Em \cite{smolic2009overview} são listadas diferentes codecs que podem ser utilizados na transmissão de vídeos estereoscópicos, onde é reforçada a idéia de que a componente de profundidade pode ser comprimida de diferentes maneiras.
 
-\section{Modifications}
+%% - Listar trabalhos que falem sobre o desempenho de video players no mobile
 
-Modifying the template --- including but not limited to: adjusting
-margins, typeface sizes, line spacing, paragraph and list definitions,
-and the use of the \verb|\vspace| command to manually adjust the
-vertical spacing between elements of your work --- is not allowed.
+O trabalho \cite{wild2018inaccessibility} cita a necessidade de adequar Video Players para serem acessíveis a pessoas portadoras de necessidades especiais. Segundo o artigo é necessário que o Video Player tenha suporte a legendas, descrição de audio, transcrições de mídia, suporte a modificações de volume e contraste de cor.
 
-{\bfseries Your document will be returned to you for revision if
-  modifications are discovered.}
+%% - Listar trabalhos que falem sobre a renderização de videos no VR
+MR360 definido em \cite{rhee2017mr360} propõe uma composição de objetos virtuals 3D durante a execução de um video 360. O video panorâmico é usado tanto como fonte de luz para iluminar os objetos virtuais quanto para compor o pano de fundo a ser renderizado.
 
-\section{Typefaces}
+%% - Listar trabalhos que lidam com o desenvolvimento de plugins Unity Android
+Calory Battle AR desenvolvido por \cite{kim2014using} é um jogo de realidade aumentada construído em Unity cujo objetivo é conscientizar o jovem público-alvo sobre os benefícios da alimentação saudável através do estímulo à pratica de exercícios ao explorar o espaço físico em busca do desarmamento das "bombas calóricas".
+\cite{sv2015popolin} mostra o desenvolvimento do \textit{Unity Cluster Package}, voltado para a criação de aplicações de multiprojeção para sistemas baseados em Aglomerado Gráfico (AG) através do modelo Mestre-Escravo no editor Unity.
 
-The ``\verb|acmart|'' document class requires the use of the
-``Libertine'' typeface family. Your \TeX\ installation should include
-this set of packages. Please do not substitute other typefaces. The
-``\verb|lmodern|'' and ``\verb|ltimes|'' packages should not be used,
-as they will override the built-in typeface families.
+%% - Referenciar nosso trabalho do SVR sobre o GVRF
 
-\section{Title Information}
+\section{Metodologia} \label{sec-methodology}
 
-The title of your work should use capital letters appropriately -
-\url{https://capitalizemytitle.com/} has useful rules for
-capitalization. Use the {\verb|title|} command to define the title of
-your work. If your work has a subtitle, define it with the
-{\verb|subtitle|} command.  Do not insert line breaks in your title.
+%% - Definir tipos de mídias a serem consumidas no VR Mobile
+%% - Definir formas de visualização do conteúdo
+%% - Comparativo de diferentes implementações (Unity x GVRF)
 
-If your title is lengthy, you must define a short version to be used
-in the page headers, to prevent overlapping text. The \verb|title|
-command has a ``short title'' parameter:
-\begin{verbatim}
-  \title[short title]{full title}
-\end{verbatim}
+Em um ambiente virtual, poderemos ter a manipulação de alguns tipos de mídia, tais como: áudio, imagem e vídeo. Dentre estes, a mídia no formato de vídeo foi escolhida para ser o objeto de estudo deste trabalho. Logo, queremos propor uma arquitetura que tenha um ótimo desempenho em uma plataforma VR no ambiente \textit{mobile}.
 
-\section{Authors and Affiliations}
+Assim, a metodologia pode ser dividida nos seguintes passos:
 
-Each author must be defined separately for accurate metadata
-identification. Multiple authors may share one affiliation. Authors'
-names should not be abbreviated; use full first names wherever
-possible. Include authors' e-mail addresses whenever possible.
+\begin{enumerate}
+    \item Definição dos formatos de vídeo a serem experimentados.
+    \item Definição das formas de visualização ou renderização do vídeo no ambiente virtual.
+    \item Comparativo de duas diferentes implementações no ambiente \textit{mobile}.
+\end{enumerate}
 
-Grouping authors' names or e-mail addresses, or providing an ``e-mail
-alias,'' as shown below, is not acceptable:
-\begin{verbatim}
-  \author{Brooke Aster, David Mehldau}
-  \email{dave,judy,steve@university.edu}
-  \email{firstname.lastname@phillips.org}
-\end{verbatim}
+Os vídeos escolhidos para experimentar a arquitetura proposta estão no formato MP4, pois é o formato com grande utilização nos dispositivos móveis. Foram escolhidos dois vídeos curtos (sendo um em 360\degree) para que sejam executados até o fim e com isso avaliarmos o desempenho nas plataformas de desenvolvimento escolhidas. É importante salientar que este trabalho não visa comparar a qualidade dos vídeos (por exemplo, tipo de codificação, compressão, etc.).
 
-The \verb|authornote| and \verb|authornotemark| commands allow a note
-to apply to multiple authors --- for example, if the first two authors
-of an article contributed equally to the work.
+A renderização do conteúdo do vídeo será visualizada nas seguintes formas: plano e 360\degree.
 
-If your author list is lengthy, you must define a shortened version of
-the list of authors to be used in the page headers, to prevent
-overlapping text. The following command should be placed just after
-the last \verb|\author{}| definition:
-\begin{verbatim}
-  \renewcommand{\shortauthors}{McCartney, et al.}
-\end{verbatim}
-Omitting this command will force the use of a concatenated list of all
-of the authors' names, which may result in overlapping text in the
-page headers.
+Visando testar a arquitetura nos dispositivos móveis, duas plataformas de desenvolvimento foram escolhidas: Unity\footnote{https://unity3d.com/} e GVRF\footnote{http://www.gearvrf.org/}. A métrica que será utilizada será a quantidade de \textit{frames} por segundo. A ferramenta chamada \textit{OVR Metrics Tool} \cite{ovrmetrictool} será utilizada para medir e coletar os valores.
 
-The article template's documentation, available at
-\url{https://www.acm.org/publications/proceedings-template}, has a
-complete explanation of these commands and tips for their effective
-use.
+Os experimentos serão realizados em dois dispositivos que contenham diferentes configurações de \textit{hardware}.
 
-\section{Rights Information}
+\section{Arquitetura} \label{sec-videoplayer-arch}
 
-Authors of any work published by ACM will need to complete a rights
-form. Depending on the kind of work, and the rights management choice
-made by the author, this may be copyright transfer, permission,
-license, or an OA (open access) agreement.
+%% - Poderíamos separar em duas camadas: Plataforma e Renderização.
 
-Regardless of the rights management choice, the author will receive a
-copy of the completed rights form once it has been submitted. This
-form contains \LaTeX\ commands that must be copied into the source
-document. When the document source is compiled, these commands and
-their parameters add formatted text to several areas of the final
-document:
-\begin{itemize}
-\item the ``ACM Reference Format'' text on the first page.
-\item the ``rights management'' text on the first page.
-\item the conference information in the page header(s).
-\end{itemize}
+Buscando a implementação otimizada de um Video Player para plataformas de Realidade Virtual móveis, dividimos nossa arquitetura em duas camadas principais:
 
-Rights information is unique to the work; if you are preparing several
-works for an event, make sure to use the correct set of commands with
-each of the works.
+\begin{enumerate}
+    \item Camada de plataforma: implementação nativa para lidar com operações de I/O para consumo e descompressão de mídias.
+    \item Camada de renderização: uso de algum framework de renderização para tornar vísivel dentro de um universo virtual 3D o conteúdo extraído da mídia.
+\end{enumerate}
 
-\section{CCS Concepts and User-Defined Keywords}
+Assim, de acordo com a camada de plataforma, diferentes formatos podem ser suportados, e renderizados de diferentes maneiras na camada de renderização. Por exemplo, um arquivo de video 2000x1000 pode ser visualizado como um video 360 distribuido no entorno do usuário poderia na verdade permitir uma resolução horizontal de cerca de 555 pixels dado um \textit{FOV} de 100 graus. A relação entre a resolução do conteúdo, o campo de visão (\textit{FOV}), e quantidade real de pixels disponibilizados é discutida na subseção \ref{sec-arch-subsec-render-layer}.
 
-Two elements of the ``acmart'' document class provide powerful
-taxonomic tools for you to help readers find your work in an online
-search.
-
-The ACM Computing Classification System ---
-\url{https://www.acm.org/publications/class-2012} --- is a set of
-classifiers and concepts that describe the computing
-discipline. Authors can select entries from this classification
-system, via \url{https://dl.acm.org/ccs/ccs.cfm}, and generate the
-commands to be included in the \LaTeX\ source.
-
-User-defined keywords are a comma-separated list of words and phrases
-of the authors' choosing, providing a more flexible way of describing
-the research being presented.
-
-CCS concepts and user-defined keywords are required for all short- and
-full-length articles, and optional for two-page abstracts.
-
-\section{Sectioning Commands}
-
-Your work should use standard \LaTeX\ sectioning commands:
-\verb|section|, \verb|subsection|, \verb|subsubsection|, and
-\verb|paragraph|. They should be numbered; do not remove the numbering
-from the commands.
-
-Simulating a sectioning command by setting the first word or words of
-a paragraph in boldface or italicized text is {\bfseries not allowed.}
-
-\section{Tables}
-
-The ``\verb|acmart|'' document class includes the ``\verb|booktabs|''
-package --- \url{https://ctan.org/pkg/booktabs} --- for preparing
-high-quality tables.
-
-Table captions are placed {\itshape above} the table.
-
-Because tables cannot be split across pages, the best placement for
-them is typically the top of the page nearest their initial cite.  To
-ensure this proper ``floating'' placement of tables, use the
-environment \textbf{table} to enclose the table's contents and the
-table caption.  The contents of the table itself must go in the
-\textbf{tabular} environment, to be aligned properly in rows and
-columns, with the desired horizontal and vertical rules.  Again,
-detailed instructions on \textbf{tabular} material are found in the
-\textit{\LaTeX\ User's Guide}.
-
-Immediately following this sentence is the point at which
-Table~\ref{tab:freq} is included in the input file; compare the
-placement of the table here with the table in the printed output of
-this document.
-
-\begin{table}
-  \caption{Frequency of Special Characters}
-  \label{tab:freq}
-  \begin{tabular}{ccl}
-    \toprule
-    Non-English or Math&Frequency&Comments\\
-    \midrule
-    \O & 1 in 1,000& For Swedish names\\
-    $\pi$ & 1 in 5& Common in math\\
-    \$ & 4 in 5 & Used in business\\
-    $\Psi^2_1$ & 1 in 40,000& Unexplained usage\\
-  \bottomrule
-\end{tabular}
-\end{table}
-
-To set a wider table, which takes up the whole width of the page's
-live area, use the environment \textbf{table*} to enclose the table's
-contents and the table caption.  As with a single-column table, this
-wide table will ``float'' to a location deemed more
-desirable. Immediately following this sentence is the point at which
-Table~\ref{tab:commands} is included in the input file; again, it is
-instructive to compare the placement of the table here with the table
-in the printed output of this document.
-
-\begin{table*}
-  \caption{Some Typical Commands}
-  \label{tab:commands}
-  \begin{tabular}{ccl}
-    \toprule
-    Command &A Number & Comments\\
-    \midrule
-    \texttt{{\char'134}author} & 100& Author \\
-    \texttt{{\char'134}table}& 300 & For tables\\
-    \texttt{{\char'134}table*}& 400& For wider tables\\
-    \bottomrule
-  \end{tabular}
-\end{table*}
-
-\section{Math Equations}
-You may want to display math equations in three distinct styles:
-inline, numbered or non-numbered display.  Each of the three are
-discussed in the next sections.
-
-\subsection{Inline (In-text) Equations}
-A formula that appears in the running text is called an inline or
-in-text formula.  It is produced by the \textbf{math} environment,
-which can be invoked with the usual
-\texttt{{\char'134}begin\,\ldots{\char'134}end} construction or with
-the short form \texttt{\$\,\ldots\$}. You can use any of the symbols
-and structures, from $\alpha$ to $\omega$, available in
-\LaTeX~\cite{Lamport:LaTeX}; this section will simply show a few
-examples of in-text equations in context. Notice how this equation:
-\begin{math}
-  \lim_{n\rightarrow \infty}x=0
-\end{math},
-set here in in-line math style, looks slightly different when
-set in display style.  (See next section).
-
-\subsection{Display Equations}
-A numbered display equation---one set off by vertical space from the
-text and centered horizontally---is produced by the \textbf{equation}
-environment. An unnumbered display equation is produced by the
-\textbf{displaymath} environment.
-
-Again, in either environment, you can use any of the symbols and
-structures available in \LaTeX\@; this section will just give a couple
-of examples of display equations in context.  First, consider the
-equation, shown as an inline equation above:
-\begin{equation}
-  \lim_{n\rightarrow \infty}x=0
-\end{equation}
-Notice how it is formatted somewhat differently in
-the \textbf{displaymath}
-environment.  Now, we'll enter an unnumbered equation:
-\begin{displaymath}
-  \sum_{i=0}^{\infty} x + 1
-\end{displaymath}
-and follow it with another numbered equation:
-\begin{equation}
-  \sum_{i=0}^{\infty}x_i=\int_{0}^{\pi+2} f
-\end{equation}
-just to demonstrate \LaTeX's able handling of numbering.
-
-\section{Figures}
-
-The ``\verb|figure|'' environment should be used for figures. One or
-more images can be placed within a figure. If your figure contains
-third-party material, you must clearly identify it as such, as shown
-in the example below.
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=\linewidth]{sample-franklin}
-  \caption{1907 Franklin Model D roadster. Photograph by Harris \&
-    Ewing, Inc. [Public domain], via Wikimedia
-    Commons. (\url{https://goo.gl/VLCRBB}).}
-  \Description{The 1907 Franklin Model D roadster.}
+\begin{figure}[h!]
+    \centerline{\includegraphics[scale=0.7]{images/video_player_arch_pt}}
+    \caption{Arquitera de Video Player proposta}
+    \label{fig-video-player-arch}
 \end{figure}
 
-Your figures should contain a caption which describes the figure to
-the reader. Figure captions go below the figure. Your figures should
-{\bfseries also} include a description suitable for screen readers, to
-assist the visually-challenged to better understand your work.
+Nas subseções a seguir são descritas como as influências da plataforma no consumo do vídeo (subseção \ref{sec-arch-subsec-platform-layer}) e citar algumas possibilidade de renderização permitadas na realidade virtual e aumentada em dispositivos móveis (subseção \ref{sec-arch-subsec-render-layer}).
 
-Figure captions are placed {\itshape below} the figure.
+\subsection{Camada de Plataforma} \label{sec-arch-subsec-platform-layer}
 
-\subsection{The ``Teaser Figure''}
+%% - Na questão de Plataforma, descrevemos um pouco o lado do Android de consumo de mídias (Uso do MediaPlayer, MediaCodec, uso do OpenGL, tipos de textura, ….), interação com o Unity via plugins
 
-A ``teaser figure'' is an image, or set of images in one figure, that
-are placed after all author and affiliation information, and before
-the body of the article, spanning the page. If you wish to have such a
-figure in your article, place the command immediately before the
-\verb|\maketitle| command:
-\begin{verbatim}
-  \begin{teaserfigure}
-    \includegraphics[width=\textwidth]{sampleteaser}
-    \caption{figure caption}
-    \Description{figure description}
-  \end{teaserfigure}
-\end{verbatim}
+A camada de plataforma é responsável pelo consumo de mídias, alocação e gerenciamento de memória para armazenar o conteúdo descomprimido, lidar com operações de I/O.
 
-\section{Citations and Bibliographies}
+Qualquer aplicação multimídia que execute vídeo precisa não apenas renderizar a mídia digital em um player, mas também necessita de controles que possam ser utilizados por qualquer usuário de maneira que ele possa interagir com este player e também ter informações sobre o status do mesmo.
 
-The use of \BibTeX\ for the preparation and formatting of one's
-references is strongly recommended. Authors' names should be complete
---- use full first names (``Donald E. Knuth'') not initials
-(``D. E. Knuth'') --- and the salient identifying features of a
-reference should be included: title, year, volume, number, pages,
-article DOI, etc.
+Na plataforma Android é possível construir um player de vídeo através da classe MediaPlayer e da biblioteca ExoPlayer. A classe MediaPlayer é utilizada para controle básico de reprodução de arquivos de áudio e vídeo. Já a biblioteca ExoPlayer define um padrão de reprodução de áudio e vídeo construídos sobre a utilização da API MediaCodec com features como DASH e HLS não disponíveis na classe MediaPlayer.
 
-The bibliography is included in your source document with these two
-commands, placed just before the \verb|\end{document}| command:
-\begin{verbatim}
-  \bibliographystyle{ACM-Reference-Format}
-  \bibliography{bibfile}
-\end{verbatim}
-where ``\verb|bibfile|'' is the name, without the ``\verb|.bib|''
-suffix, of the \BibTeX\ file.
+A classe MediaCodec oferece diversas possibilidades para o ExoPlayer por oferecer acesso a codecs de mídia em nível baixo de implementação. Isso é possível pois, de maneira simples, os codecs processam dados de entrada para transformar em dados de saída através de diversos buffers de entrada e saída que são processados assincronamente.
 
-Citations and references are numbered by default. A small number of
-ACM publications have citations and references formatted in the
-``author year'' style; for these exceptions, please include this
-command in the {\bfseries preamble} (before
-``\verb|\begin{document}|'') of your \LaTeX\ source:
-\begin{verbatim}
-  \citestyle{acmauthoryear}
-\end{verbatim}
+MediaCodec trabalha com os seguintes tipos de dados:
 
-  Some examples.  A paginated journal article \cite{Abril07}, an
-  enumerated journal article \cite{Cohen07}, a reference to an entire
-  issue \cite{JCohen96}, a monograph (whole book) \cite{Kosiur01}, a
-  monograph/whole book in a series (see 2a in spec. document)
-  \cite{Harel79}, a divisible-book such as an anthology or compilation
-  \cite{Editor00} followed by the same example, however we only output
-  the series if the volume number is given \cite{Editor00a} (so
-  Editor00a's series should NOT be present since it has no vol. no.),
-  a chapter in a divisible book \cite{Spector90}, a chapter in a
-  divisible book in a series \cite{Douglass98}, a multi-volume work as
-  book \cite{Knuth97}, an article in a proceedings (of a conference,
-  symposium, workshop for example) (paginated proceedings article)
-  \cite{Andler79}, a proceedings article with all possible elements
-  \cite{Smith10}, an example of an enumerated proceedings article
-  \cite{VanGundy07}, an informally published work \cite{Harel78}, a
-  doctoral dissertation \cite{Clarkson85}, a master's thesis:
-  \cite{anisi03}, an online document / world wide web resource
-  \cite{Thornburg01, Ablamowicz07, Poker06}, a video game (Case 1)
-  \cite{Obama08} and (Case 2) \cite{Novak03} and \cite{Lee05} and
-  (Case 3) a patent \cite{JoeScientist001}, work accepted for
-  publication \cite{rous08}, 'YYYYb'-test for prolific author
-  \cite{SaeediMEJ10} and \cite{SaeediJETC10}. Other cites might
-  contain 'duplicate' DOI and URLs (some SIAM articles)
-  \cite{Kirschmer:2010:AEI:1958016.1958018}. Boris / Barbara Beeton:
-  multi-volume works as books \cite{MR781536} and \cite{MR781537}. A
-  couple of citations with DOIs:
-  \cite{2004:ITE:1009386.1010128,Kirschmer:2010:AEI:1958016.1958018}. Online
-  citations: \cite{TUGInstmem, Thornburg01, CTANacmart}. Artifacts:
-  \cite{R} and \cite{UMassCitations}.
+\begin{enumerate}
+    \item compressed
+    \item raw audio
+    \item raw video
+\end{enumerate}
 
-\section{Acknowledgments}
+Qualquer um destes tipos pode ser processado utilizado objetos da classe ByteBuffer, mas para melhorar performance do codec, é necessário usar Surface ao trabalhar com dados do tipo raw video. Isso se dá devido ao uso de buffers nativos onde não se faz necessário o mapeamento ou cópia de dados para objetos ByteBuffers. Vale ressaltar que é inviável acessar dados do tipo raw data quando se utiliza uma Surface, sendo uma solução a utilização de um objeto da classe ImageReader para obter frames de video.
 
-Identification of funding sources and other support, and thanks to
-individuals and groups that assisted in the research and the
-preparation of the work should be included in an acknowledgment
-section, which is placed just before the reference section in your
-document.
+O mimetype de um arquivo define os dados comprimidos dos buffers de entrada e saída. Para vídeos, geralmente é apenas um único frame de vídeo comprimido. Com relação aos buffers de vídeo no modo ByteBuffer, eles são definidos de acordo com o formato de cores que podem ser:
 
-This section has a special environment:
-\begin{verbatim}
-  \begin{acks}
-  ...
-  \end{acks}
-\end{verbatim}
-so that the information contained therein can be more easily collected
-during the article metadata extraction phase, and to ensure
-consistency in the spelling of the section heading.
+\begin{enumerate}
+    \item formato native raw video
+    \item buffers YUV flexíveis
+    \item outros, de formato específicos: geralmente suportado pelo modo ByteBuffer
+\end{enumerate}
 
-Authors should not prepare this section as a numbered or unnumbered {\verb|\section|}; please use the ``{\verb|acks|}'' environment.
 
-\section{Appendices}
+Todo codec possui estados que mapeam ações durante seu ciclo de vida. Eles podem assumir os estados Stopped, Executing e Released. O estado Stopped mapeia um conjunto de outros sub-estados que são Unintialized, Configured e Error, enquanto o estado Executing se desenvolve sobre outros sub-estados que são Flushed, Running e End-of-Stream.
 
-If your work needs an appendix, add it before the
-``\verb|\end{document}|'' command at the conclusion of your source
-document.
+O codec ao ser criado por qualquer factory, começa pelo estado Unintialized. Ao ser configurado através da utilização de configure(), passa para Configured e então ao ser chamado start(), o codec passa para o estado Executing, especificamente entrando pelo sub-estado Flushed que onde já se contém todos os buffers. Quando o primeiro buffer sai da fila, o sub-estado do codec passa para Running e quando um buffer com o marcado de end-of-stream é colocado na fila, o codec passa para o estado End of Stream. Se durante a execução do codec o método flush() for executado, ele retorna para o estado Flushed. A chamada stop() retorna ele para o estado Unintialized e raramente quando, durante a execução do codec, há algum erro, o codec passa para o estado Error. Durante qualquer momento, se o método release() for chamado, o codec passa para o estado Released.
 
-Start the appendix with the ``\verb|appendix|'' command:
-\begin{verbatim}
-  \appendix
-\end{verbatim}
-and note that in the appendix, sections are lettered, not
-numbered. This document has two appendices, demonstrating the section
-and subsection identification method.
+É possível criar aplicações Android com alta performance de gráficos 2D e 3D através da API OpenGL ES e também do Native Development Kit (NDK). OpenGL é uma interface de programação que permite comunicação e manipulação de processamento de gráficos 3D no hardware responsável. O Android suporta as seguintes versões da API OpenGL ES:
+\begin{enumerate}
+    \item OpenGL ES 1.0: Android 1.0+
+    \item OpenGL ES 2.0: Android 2.2(API Level 8)+
+    \item OpenGL ES 3.0: Android 4.3(API Level 18)+
+    \item OpenGL ES 3.1: Android 5.0(API Level 21)+
+\end{enumerate}
 
-\section{SIGCHI Extended Abstracts}
+A manipulação de gráficos através da API OpenGL ES se dá a partir da classe GLSurfaceView e da interface GLSurfaceView.Renderer.
+A classe GLSurfaceView é uma View utilizada para desenhar e manipular objetos através de chamadas feitas à API OpenGL ES. Já a interface GLSurfaceView.Renderer é responsável por fazer chamadas OpenGL para renderizar um frame através da especificação dos seguintes métodos que precisam ser implementados:
+onSurfaceCreated(): geralmente chamado uma única vez para definição dos parâmetros de ambiente OpenGL que serão utilizados durante a execução ou para inicializar objetos da API;
+onDrawFrame(): chamado a cada vez que a GLSurfaceView precisar ser redesenhada;
+e onSurfaceChanged(): chamado sempre que a geometria da GLSurfaceView for alterada, incluindo definições de tamanho da GLSurfaceView e orientação da tela do dispositivo.
+Dentro deste contexto, uma aplicação comum que utiliza a API OpenGL ES cria diversas texturas durante seu tempo de execução. Sabe-se que texturas em alta resolução ajudam no resultado final da aplicação em alcançar gráficos melhores e muitas vezes até em melhorar a experiência do usuário que utiliza algo dependente deste tipo de tecnologia. Mas quanto maior a resolução, mais memória se demanda para gerenciamento e mais tempo se gasta em carregamento. Um exemplo disso são as extensões JPG e PNG que não são descomprimidos diretamente pela GPU.
+Uma forma de melhorar a performance da aplicação, consumo de bateria, aquecimento do dispositivo e até mesmo diminuir muitas vezes o tamanho das APK's geradas é fazer uso dos formatos hardware accelerated. Para este formato, há duas categorias: as padrões e as proprietárias.
 
-The ``\verb|sigchi-a|'' template style (available only in \LaTeX\ and
-not in Word) produces a landscape-orientation formatted article, with
-a wide left margin. Three environments are available for use with the
-``\verb|sigchi-a|'' template style, and produce formatted output in
-the margin:
-\begin{itemize}
-\item {\verb|sidebar|}:  Place formatted text in the margin.
-\item {\verb|marginfigure|}: Place a figure in the margin.
-\item {\verb|margintable|}: Place a table in the margin.
-\end{itemize}
+Os formatos padrões para trabalhar com texturas hardware accelerated são:
+
+\begin{enumerate}
+    \item ETC1: suportado em todos o dispositivos com OpenGL ES 2.0+
+    \item ETC2: suportado nos dispositivos com OpenGL ES 3.0+
+    \item ASTC: Suportado com Android Extension Pack.
+\end{enumerate}
+
+Já os formatos proprietários são os seguintes:
+
+\begin{enumerate}
+    \item ATC: disponível em Adreno GPU
+    \item PVRTC: disponível em PowerVR GPU
+    \item DXT1 e S3TC: disponível em dispositivos Nvidia Tegra Platform
+\end{enumerate}
+
+Com base em vários formatos, é preciso avaliar qual atende melhor a necessidade da aplicação que está sendo desenvolvida, mas o melhor caso é quando o Android Extension Pack é suportado. Neste Pack está disponível o formato de compressão ATSC (Adaptive Scalable Texture Compreension), definido neste como padrão e, desta forma, exclui a necessidade de trabalhar com tipos diferentes para plataformas diferentes. Atualmente o ATSC possui qualidade maior que outros formatos disponíveis na GPU por ter suporte alfa completo e melhor conservação da qualidade.
+
+% Texturas de vídeo (Surface, Texturas OES): Falar que videos normalmente são renderizados em texturas do tipo OES.
+Uma das partes menos documentadas na literatura é a renderização em texturas. A utilização de texturas permite a atualização e renderização contínua de componentes dinâmicos como sites, vídeos e outros. Para objetos estáticos, a melhor abordagem é trabalhar com bitmap.
+
+A funcionamento de texturas de vídeos dependem de alguns passos. Primeiramente, é importante criar uma classe que implemente a interface GLSurfaceView.Renderer e em tal classe é definida a especificação da atualização de textura por frame. As texturas utilizadas para vídeo possuem seus canvas atualizados dentro do método executado pela thread GL que gerencia esta etapa. No Android, na maioria das vezes se trata de um método onDraw() do componente. O ponto principal da definição das texturas que são criadas com este objetivo é sua definição como $GL_TEXTURE_EXTERNAL_OES$ ao invés de $GL_TEXTURE_2D$. Isto se dá pois as texturas do tipo OES possuem uma tabela de textura semi-global na GPU que permite que elas seja utilizadas em outros contextos GL, garantindo assim segurança na sua utilização.
+
+\subsection{Camada de Renderização} \label{sec-arch-subsec-render-layer}
+
+A camada de renderização é responsável explorar diferentes formas de visualização do video, seja em um plano, numa esfera em 360, em um grid de voxels, utilizando os mais diversos shaders...
+
+%% - Na Renderização podemos
+
+\subsubsection{Renderização de Vídeo usando Unity}
+
+%% - Mencionar StateMachines
+
+Unity é...
+
+
+\subsubsection{Renderização de Vídeo usando GVRF}
+
+% TO REPHRASE
+\textit{GearVR framework} (GVRf) é fornecido como uma biblioteca de APIs para renderização de aplicações VR/AR/MR. Sua sintaxe de código traça similaridades com as \textit{APIs} de motores gráficos de jogos, por exemplo, fornecendo uma \textit{pipeline} conhecida a maioria dos desenvolvedores de jogos: e.g, objetos do mundo 3D se organizam em cenas e também podem ter suas visualizações configuradas por materiais, estes que podem possuir seus próprios \textit{shaders}, código destinados a GPU com instruções para a renderização de cada pixel pertecente ao objeto alvo.
+
+
+\section{Resultados} \label{sec-results}
+
+%% - A idéia é apresentar como resultado uma curta análise de desempenho (medidas de FPS, ….) de uma ou mais aplicações rodando esse video player.
+%% - Comparar GVRF x Unity
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Conclusão e Trabalhos Futuros} \label{sec-conclusion}
+
+%% - Podemos mencionar a necessidade de mensurar o real desempenho da execução/rasterização do vídeo, puxando assim o gancho para o próximo paper.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 %%
 %% The acknowledgments section is defined using the "acks" environment
@@ -682,6 +360,12 @@ the margin:
 %% consistent spelling of the heading.
 \begin{acks}
 To Robert, for the bagels and explaining CMYK and color spaces.
+
+Identification of funding sources and other support, and thanks to
+individuals and groups that assisted in the research and the
+preparation of the work should be included in an acknowledgment
+section, which is placed just before the reference section in your
+document.
 \end{acks}
 
 %%
@@ -692,37 +376,7 @@ To Robert, for the bagels and explaining CMYK and color spaces.
 
 %%
 %% If your work has an appendix, this is the place to put it.
-\appendix
-
-\section{Research Methods}
-
-\subsection{Part One}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-malesuada, quam in pulvinar varius, metus nunc fermentum urna, id
-sollicitudin purus odio sit amet enim. Aliquam ullamcorper eu ipsum
-vel mollis. Curabitur quis dictum nisl. Phasellus vel semper risus, et
-lacinia dolor. Integer ultricies commodo sem nec semper.
-
-\subsection{Part Two}
-
-Etiam commodo feugiat nisl pulvinar pellentesque. Etiam auctor sodales
-ligula, non varius nibh pulvinar semper. Suspendisse nec lectus non
-ipsum convallis congue hendrerit vitae sapien. Donec at laoreet
-eros. Vivamus non purus placerat, scelerisque diam eu, cursus
-ante. Etiam aliquam tortor auctor efficitur mattis.
-
-\section{Online Resources}
-
-Nam id fermentum dui. Suspendisse sagittis tortor a nulla mollis, in
-pulvinar ex pretium. Sed interdum orci quis metus euismod, et sagittis
-enim maximus. Vestibulum gravida massa ut felis suscipit
-congue. Quisque mattis elit a risus ultrices commodo venenatis eget
-dui. Etiam sagittis eleifend elementum.
-
-Nam interdum magna at lectus dignissim, ac dignissim lorem
-rhoncus. Maecenas eu arcu ac neque placerat aliquam. Nunc pulvinar
-massa et mattis lacinia.
+% \appendix
 
 \end{document}
 \endinput
