@@ -1,0 +1,172 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.20 of 2017/10/04
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+% \renewcommand\UrlFont{\color{blue}\rmfamily}
+
+\begin{document}
+%
+\title{Video Player Architecture for Virtual Reality on Mobile Devices\thanks{Supported by Sidia}}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{Adriano M. Gil \and
+Afonso R. Costa Jr \and
+Atacilio C. Cunha \and
+Thiago S. Figueira \and
+Antonio A. Silva}
+
+
+%
+\authorrunning{F. Author et al.}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{SIDIA Instituto de Ci\^encia e Tecnologia (SIDIA)\\
+Manaus, Brazil
+\email{\{adriano.gil,afonso.costsa,atacilio.cunha,\\
+         thiago.figueira,antonio.arquelau\}@sidia.com}}
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+The abstract should briefly summarize the contents of the paper in
+150--250 words.
+
+\keywords{First keyword  \and Second keyword \and Another keyword.}
+\end{abstract}
+%
+%
+%
+\section{Introduction}
+
+% TODO: media consumption on VR
+ Virtual Reality (VR) applications provide great interaction with multimedia content. This kind of content becomes an unique experience for the end-user as applications work as a media gallery inside the VR environment such as the Samsung VR \cite{SVR}.
+
+% TODO: engines/frameworks for developping VR apps
+Those applications, which are usually built using 3D engines or frameworks, target mostly mobile devices like smartphones. In this scenario, it is important to define and follow a software architecture to organize the communication between the render and platform layers, thus provide better performance results.
+
+% TODO: usage of native media player for decoding media in an efficient way
+% TODO: importance of a proper architecture for improving rendering performance
+
+% TODO: describe proposal
+This work proposes a high-performance architecture that can be implemented for video players on mobile platforms to run videos on VR environments. This architecture is evaluated using two 3D engines: (Unity \cite{Unity} and Samsung XR \cite{SXR}) in the Android platform. The methodology and initial experiments are in the following sections.
+
+% TODO: describe sections
+%This work proposes a high performance architecture which can be implemented for video players on mobile platforms to run videos on VR environments. This architecture is evaluated using two 3D engines (Unity\cite{Unity} and Samsung XR\cite{SXR}) on the Android platform. The methodology and initial experiments are described in the next sections. %
+
+\section{Related Work}
+
+% TODO: Refs regarding media consumption
+% TODO: Refs regarding media consumption on VR apps
+% TODO: Refs regarding Sw architectures for VR apps
+% TODO: Current solutions for developping media players on VR
+
+Media consumption is a relevant activity for users in the digital world, content consumption has been growing according to \cite{repo2004users}. In \cite{hu2018kalgan} and \cite{smolic2009overview}, we find some examples of research made about video players. According to \cite{wild2018inaccessibility}, it is mandatory that a video player supports subtitle, audio description, media transcription, volume changing and color contrast.
+
+\section{Methodology}
+
+% TODO: Describe methodology
+
+The methodology that is being followed to evaluate the proposed architecture is below:
+
+\begin{enumerate}
+    \item Definition of the video format.
+    \item Definition of ways to visualize the video in a virtual environment.
+    \item Comparison between two different render implementations (Unity and SXR) in the Android platform (using two different devices).
+    \item Comparison between two different native video players (ExoPlayer \cite{Exo} and Android Player \cite{AndroidVideoPlayer}).
+\end{enumerate}
+
+The chosen videos are 360-degree videos in the \textit{.mp4} format since this format is widely used in Android devices. The performance evaluation tool is the OVR Metrics Tool \cite{ovrmetrictool}, and the metric is frame-rate (FPS), which is most significant for the user experience.
+
+% TODO: Describe how this work is going to be evaluated
+
+% TODO: Which metrics we are going to use to compare different architectures? Why?
+
+%In a VR environment, will be made media types manipulation, for example: audio, image and video. With this options, the video media format was chosen for the experiments of this paper. So an architecture that has a good performance at mobile devices will be proposed.
+
+\section{VR Video Player}
+
+% TODO: List features of a VR video player
+% TODO: List dependencies necessary to build a VR video player app: media decoder, rendering engine, ...
+% TODO: What are the non-functional requirements of such apps?
+
+\section{Architecture}
+
+% TODO: Describe main components of the architecture
+% TODO: Describe how such components are connected
+% TODO: Describe how non-functional requirements can be met with this architecture
+
+Seeking for an optimized way to use a video player in mobile virtual reality platforms, the architecture was divided into two main layers:
+
+\begin{enumerate}
+    \item Platform layer: native implementation to handle I/O operations and file system.
+    \item Rendering layer: use of some render framework to turn visible inside the 3D virtual universe.
+\end{enumerate}
+
+This architecture (Figure \ref{fig-video-player-arch}) aims to (1) organize the communication between all modules present in the layers, (2) organize the code to be used by different render engines or different native players, and (3) provide good performance in all media codecs and texture renders.
+
+%The Platform layer is responsible for media consuming, file system, allocation and memory management. Some multimedia application that executes videos needs not only render digital media but allow user interact with this player.
+
+\begin{figure*}[h!]
+    \centerline{\includegraphics[scale=0.5]{images/ProposedArch.png}}
+    \caption{Proposed architecture for Video Player}
+    \label{fig-video-player-arch}
+\end{figure*}
+
+\subsection{Experiments and Results}
+
+% TODO: Describe experiments
+% TODO: Compare results
+
+According to Figure \ref{SXR-graph} and Figure \ref{gallery-graph}, the SXR framework keeps 60 FPS in all test cases. However, the initial experiments have shown that the video player of VR Gallery (application developed in Unity) does not perform well. While in Samsung Galaxy S8, Gallery has variation between 55 and 60 FPS, in Samsung Galaxy S6 it stays between 40 and 50 FPS.
+
+The graphs below shows the FPS performance of SXR.
+
+\begin{figure*}[!h]
+    \centerline{\includegraphics[scale=0.45]{images/SXR.png}}
+    \caption{FPS on SXR}
+    \label{SXR-graph}
+\end{figure*}
+
+% TODO: Discuss results
+This difference on both applications exists for the following reasons: SXR is an app that only has the video player while Gallery has many more features as well as background processes like providers and memory allocation lists; another significant difference is the virtual environment that is heavier in Gallery.
+
+Even with the mentioned remarks, the user experience was not affected in any of the tests as the video player performed well. The user cannot perceive the difference between both applications and the frame-rate difference is unnoticeable in all tests.
+
+The graphs below shows the FPS performance of Unity Framework.
+
+\begin{figure*}[h!]
+    \centerline{\includegraphics[scale=0.45]{images/Gallery.png}}
+    \caption{FPS on VR Gallery}
+    \label{gallery-graph}
+\end{figure*}
+
+\subsection{Conclusion / Next Steps}
+
+% TODO: Highlight main contributions of the paper\
+According to the tests, the VR Gallery video player does not have good performance when compared to SXR, however the difference between the two can be explained by the fact that the VR Gallery is a complete and robust application, i.e. it has providers and animations. Even so, the video player of Gallery gives users a complete experience of a good performance video player in a VR environment.
+
+% TODO: Describe next steps
+For the full paper, other tests will be made using this architecture in Unity, but isolating the video player from any application. The same metrics will be used but the comparisons will be more directed to the architecture. Besides that, different native video players will be tested using the architecture as well.
+
+%
+% ---- Bibliography ----
+%
+% BibTeX users should specify bibliography style 'splncs04'.
+% References will then be sorted and formatted in the correct style.
+%
+\bibliographystyle{splncs04}
+\bibliography{vrvideoplayerarch}
+
+\end{document}
